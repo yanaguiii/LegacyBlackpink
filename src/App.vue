@@ -5,7 +5,7 @@
     <Setlist />
     <Chapters />
     <Manifesto />
-    <CTA @submit="openModal" />
+    <CTA />
     <Footer />
     <SeatModal :open="modalOpen" @close="modalOpen = false" />
   </div>

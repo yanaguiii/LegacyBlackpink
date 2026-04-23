@@ -7,7 +7,7 @@
       Vestido por quem escolhe ser <em>vista</em>.
     </h1>
     <p class="bp-hero__sub">
-      Um cover oficial da BLACKPINK. Três anos de palco, uma coroa emprestada, nenhum pedido de licença.
+      Um cover oficial da BLACKPINK. Cinco anos de palco, uma coroa emprestada, nenhum pedido de licença.
     </p>
     <div class="bp-hero__actions">
       <Button variant="primary" @click="$emit('primary')">Reserve seu lugar →</Button>
