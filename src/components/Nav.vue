@@ -9,8 +9,9 @@
     </a>
     <div class="bp-nav__links">
       <a class="bp-nav__link bp-nav__link--active" href="#setlist">— repertório</a>
+      <a class="bp-nav__link" href="#gallery">galeria</a>
+      <a class="bp-nav__link" href="#videos">vídeos</a>
       <a class="bp-nav__link" href="#chapters">capítulos</a>
-      <a class="bp-nav__link" href="#program">manifesto</a>
       <a class="bp-nav__link" href="#shop">contato</a>
     </div>
     <Button variant="primary" size="sm" @click="$emit('enter')">Entrar</Button>
