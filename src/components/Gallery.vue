@@ -22,7 +22,6 @@
         <template v-else>
           <div class="bp-tile__placeholder">
             <img src="/assets/crown-flat.png" alt="" class="bp-tile__mark" />
-            <span class="bp-tile__slot">— slot {{ String(i + 1).padStart(2, '0') }} —</span>
           </div>
         </template>
         <figcaption v-if="item.caption" class="bp-tile__caption">{{ item.caption }}</figcaption>

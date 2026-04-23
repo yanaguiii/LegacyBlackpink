@@ -17,7 +17,7 @@
         @click.prevent="go(l.href)"
       >{{ l.label }}</a>
     </div>
-    <Button variant="primary" size="sm" @click="$emit('enter')">Entrar</Button>
+    <Button variant="primary" size="sm" @click="$emit('contact')">Entre em contato</Button>
   </nav>
 </template>
 
@@ -25,7 +25,7 @@
 import Button from './Button.vue'
 import { scrollToAnchor } from '../composables/lenis.js'
 
-defineEmits(['enter'])
+defineEmits(['contact'])
 
 const links = [
   { href: '#setlist',  label: '— repertório', active: true },

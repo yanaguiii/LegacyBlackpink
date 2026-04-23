@@ -16,7 +16,7 @@
         <p class="bp-gem__b">
           Um cover não é cópia. É a forma de dizer: essa canção foi escrita para outra pessoa, e esta noite, ela é para você.
         </p>
-        <Button variant="primary" size="sm">Entrar →</Button>
+        <Button variant="primary" size="sm" @click="$emit('contact')">Entre em contato →</Button>
       </article>
       <article v-reveal="240" class="bp-gem">
         <Eyebrow>capítulo iii</Eyebrow>
@@ -33,4 +33,6 @@
 <script setup>
 import Eyebrow from './Eyebrow.vue'
 import Button from './Button.vue'
+
+defineEmits(['contact'])
 </script>

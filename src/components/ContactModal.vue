@@ -6,21 +6,29 @@
         <img src="/assets/crown-flat.png" class="bp-modal__crown" alt="" />
 
         <template v-if="!submitted">
-          <span class="bp-eyebrow bp-eyebrow--ruled">— reserve seu lugar —</span>
-          <h2 class="bp-modal__t">Bem-vinda à primeira fila.</h2>
-          <p class="bp-modal__b">Preencha seus dados. Em até uma hora você recebe o passe no email.</p>
+          <span class="bp-eyebrow bp-eyebrow--ruled">— get in touch —</span>
+          <h2 class="bp-modal__t">Entre em contato.</h2>
+          <p class="bp-modal__b">Shows, parcerias, covers por encomenda. Respondemos em até 24h.</p>
           <form class="bp-modal__form" @submit.prevent="onSubmit" novalidate>
-            <Field v-model="fullName" label="nome completo" placeholder="Jennie K." />
+            <Field v-model="fullName" label="nome" placeholder="Jennie K." />
             <Field v-model="email" label="email" placeholder="voce@backstage.com" type="email" boxed />
-            <Field v-model="code" label="código do passe" placeholder="TOUR-0001" boxed />
-            <Button variant="primary" type="submit">Confirmar →</Button>
+            <label class="bp-field">
+              <span class="bp-field__label">— mensagem</span>
+              <textarea
+                v-model="message"
+                class="bp-field__inp bp-field__inp--boxed bp-field__inp--area"
+                rows="4"
+                placeholder="Conte o que você precisa."
+              />
+            </label>
+            <Button variant="primary" type="submit">Enviar →</Button>
           </form>
         </template>
 
         <template v-else>
-          <span class="bp-eyebrow bp-eyebrow--ruled">— seu passe está a caminho —</span>
-          <h2 class="bp-modal__t">Até logo, backstage.</h2>
-          <p class="bp-modal__b">Confirmação em <strong>{{ email }}</strong> dentro de uma hora. Esse modal fecha em {{ countdown }}s.</p>
+          <span class="bp-eyebrow bp-eyebrow--ruled">— mensagem enviada —</span>
+          <h2 class="bp-modal__t">Recebemos sua mensagem.</h2>
+          <p class="bp-modal__b">Resposta em <strong>{{ email }}</strong> em até 24h. Esse modal fecha em {{ countdown }}s.</p>
         </template>
       </div>
     </div>
@@ -39,13 +47,13 @@ const emit = defineEmits(['close'])
 
 const fullName = ref('')
 const email = ref('')
-const code = ref('')
+const message = ref('')
 const submitted = ref(false)
 const countdown = ref(5)
 let timer = null
 
 function onSubmit() {
-  if (!fullName.value.trim() || !/^\S+@\S+\.\S+$/.test(email.value)) return
+  if (!fullName.value.trim() || !/^\S+@\S+\.\S+$/.test(email.value) || !message.value.trim()) return
   submitted.value = true
   countdown.value = 5
   timer = setInterval(() => {
@@ -62,7 +70,7 @@ function resetState() {
   submitted.value = false
   fullName.value = ''
   email.value = ''
-  code.value = ''
+  message.value = ''
   if (timer) { clearInterval(timer); timer = null }
 }
 

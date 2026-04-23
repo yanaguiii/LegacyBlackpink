@@ -1,15 +1,15 @@
 <template>
   <div class="bp-page">
-    <Nav @enter="openModal" />
-    <Hero @primary="openModal" />
+    <Nav @contact="openContact" />
+    <Hero @contact="openContact" />
     <Setlist />
     <Gallery />
     <Videos />
-    <Chapters />
+    <Chapters @contact="openContact" />
     <Manifesto />
     <CTA />
     <Footer />
-    <SeatModal :open="modalOpen" @close="modalOpen = false" />
+    <ContactModal :open="modalOpen" @close="modalOpen = false" />
   </div>
 </template>
 
@@ -24,11 +24,11 @@ import Chapters from './components/Chapters.vue'
 import Manifesto from './components/Manifesto.vue'
 import CTA from './components/CTA.vue'
 import Footer from './components/Footer.vue'
-import SeatModal from './components/SeatModal.vue'
+import ContactModal from './components/ContactModal.vue'
 import { initLenis, getLenis } from './composables/lenis.js'
 
 const modalOpen = ref(false)
-const openModal = () => { modalOpen.value = true }
+const openContact = () => { modalOpen.value = true }
 
 onMounted(() => {
   initLenis()
