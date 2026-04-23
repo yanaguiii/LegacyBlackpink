@@ -1,10 +1,10 @@
 <template>
   <section class="bp-cta" id="shop">
-    <Eyebrow>— lista de espera —</Eyebrow>
-    <h2 class="bp-cta__t">A primeira fila é por convite.</h2>
-    <p class="bp-cta__b">Deixe seu nome. Quando um lugar abrir, você será a primeira a saber.</p>
+    <Eyebrow v-reveal>— lista de espera —</Eyebrow>
+    <h2 v-reveal="80" class="bp-cta__t">A primeira fila é por convite.</h2>
+    <p v-reveal="180" class="bp-cta__b">Deixe seu nome. Quando um lugar abrir, você será a primeira a saber.</p>
 
-    <form v-if="!submitted" class="bp-cta__form" @submit.prevent="onSubmit" novalidate>
+    <form v-if="!submitted" v-reveal="280" class="bp-cta__form" @submit.prevent="onSubmit" novalidate>
       <Field v-model="name" label="seu nome" placeholder="Jennie K." />
       <Field v-model="email" label="email" placeholder="voce@backstage.com" type="email" />
       <Button variant="primary" type="submit">Entrar na lista →</Button>

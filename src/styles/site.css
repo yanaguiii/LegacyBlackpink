@@ -186,7 +186,6 @@ body {
   height: auto;
   margin-bottom: -8px;
   filter: drop-shadow(0 0 32px rgba(244,166,189,0.25));
-  animation: bp-rise 900ms var(--ease-stage) both;
   position: relative;
 }
 .bp-hero__title {
@@ -229,11 +228,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-}
-
-@keyframes bp-rise {
-  from { opacity: 0; transform: translateY(24px) scale(0.92); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* ---------- Setlist ---------- */
@@ -609,7 +603,11 @@ body {
   box-shadow: inset 0 0 0 1px rgba(244,166,189,0.3), 0 0 80px rgba(244,166,189,0.12);
   border-radius: 12px;
   text-align: center;
-  animation: bp-rise 520ms var(--ease-stage);
+  animation: bp-modal-in 520ms var(--ease-stage);
+}
+@keyframes bp-modal-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 .bp-modal__close {
   position: absolute; top: 16px; right: 16px;

@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import Nav from './components/Nav.vue'
 import Hero from './components/Hero.vue'
 import Setlist from './components/Setlist.vue'
@@ -25,7 +25,18 @@ import Manifesto from './components/Manifesto.vue'
 import CTA from './components/CTA.vue'
 import Footer from './components/Footer.vue'
 import SeatModal from './components/SeatModal.vue'
+import { initLenis, getLenis } from './composables/lenis.js'
 
 const modalOpen = ref(false)
 const openModal = () => { modalOpen.value = true }
+
+onMounted(() => {
+  initLenis()
+})
+
+watch(modalOpen, (v) => {
+  const lenis = getLenis()
+  if (!lenis) return
+  v ? lenis.stop() : lenis.start()
+})
 </script>

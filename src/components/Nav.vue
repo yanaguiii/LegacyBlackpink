@@ -1,6 +1,6 @@
 <template>
   <nav class="bp-nav">
-    <a class="bp-nav__brand" href="#top">
+    <a class="bp-nav__brand" href="#top" @click.prevent="go('#top')">
       <img src="/assets/crown-flat.png" alt="" />
       <span class="bp-nav__lockup">
         <span class="bp-nav__eyebrow">— legacy —</span>
@@ -8,11 +8,14 @@
       </span>
     </a>
     <div class="bp-nav__links">
-      <a class="bp-nav__link bp-nav__link--active" href="#setlist">— repertório</a>
-      <a class="bp-nav__link" href="#gallery">galeria</a>
-      <a class="bp-nav__link" href="#videos">vídeos</a>
-      <a class="bp-nav__link" href="#chapters">capítulos</a>
-      <a class="bp-nav__link" href="#shop">contato</a>
+      <a
+        v-for="l in links"
+        :key="l.href"
+        class="bp-nav__link"
+        :class="{ 'bp-nav__link--active': l.active }"
+        :href="l.href"
+        @click.prevent="go(l.href)"
+      >{{ l.label }}</a>
     </div>
     <Button variant="primary" size="sm" @click="$emit('enter')">Entrar</Button>
   </nav>
@@ -20,5 +23,20 @@
 
 <script setup>
 import Button from './Button.vue'
+import { scrollToAnchor } from '../composables/lenis.js'
+
 defineEmits(['enter'])
+
+const links = [
+  { href: '#setlist',  label: '— repertório', active: true },
+  { href: '#gallery',  label: 'galeria' },
+  { href: '#videos',   label: 'vídeos' },
+  { href: '#chapters', label: 'capítulos' },
+  { href: '#shop',     label: 'contato' }
+]
+
+function go(sel) {
+  scrollToAnchor(sel)
+  history.replaceState(null, '', sel)
+}
 </script>

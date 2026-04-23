@@ -1,6 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import '../styles/tokens.css'
-import './styles/site.css'
+import { vReveal } from './directives/reveal.js'
 
-createApp(App).mount('#app')
+import '../styles/tokens.css'
+import 'lenis/dist/lenis.css'
+import './styles/site.css'
+import './styles/motion.css'
+
+const app = createApp(App)
+app.directive('reveal', vReveal)
+app.mount('#app')

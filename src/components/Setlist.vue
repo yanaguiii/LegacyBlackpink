@@ -1,11 +1,11 @@
 <template>
   <section class="bp-tour" id="setlist">
     <div class="bp-tour__head">
-      <Eyebrow>— the setlist —</Eyebrow>
-      <h2 class="bp-tour__title">Repertório · 2026</h2>
+      <Eyebrow v-reveal>— the setlist —</Eyebrow>
+      <h2 v-reveal="60" class="bp-tour__title">Repertório · 2026</h2>
     </div>
     <ol class="bp-tour__list">
-      <li v-for="(t, i) in setlist" :key="i" class="bp-tour__row">
+      <li v-for="(t, i) in setlist" :key="i" v-reveal="i * 60" class="bp-tour__row">
         <span class="bp-tour__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
         <span class="bp-tour__song">{{ t.song }}</span>
         <span class="bp-tour__album">{{ t.album }}</span>

@@ -1,7 +1,7 @@
 <template>
   <section class="bp-gems" id="chapters">
     <div class="bp-gems__grid">
-      <article class="bp-gem">
+      <article v-reveal class="bp-gem">
         <Eyebrow>capítulo i</Eyebrow>
         <h3 class="bp-gem__t">A Abertura</h3>
         <p class="bp-gem__b">
@@ -9,7 +9,7 @@
         </p>
         <Button variant="ghost" size="sm">Ler →</Button>
       </article>
-      <article class="bp-gem bp-gem--featured">
+      <article v-reveal="120" class="bp-gem bp-gem--featured">
         <img src="/assets/crown-flat.png" class="bp-gem__crown" alt="" />
         <Eyebrow>capítulo ii</Eyebrow>
         <h3 class="bp-gem__t">A Coroação</h3>
@@ -18,7 +18,7 @@
         </p>
         <Button variant="primary" size="sm">Entrar →</Button>
       </article>
-      <article class="bp-gem">
+      <article v-reveal="240" class="bp-gem">
         <Eyebrow>capítulo iii</Eyebrow>
         <h3 class="bp-gem__t">O Encore</h3>
         <p class="bp-gem__b">

@@ -1,15 +1,16 @@
 <template>
   <section class="bp-gallery" id="gallery">
     <div class="bp-gallery__head">
-      <Eyebrow>— bastidores —</Eyebrow>
-      <h2 class="bp-gallery__title">Galeria</h2>
-      <p class="bp-gallery__sub">Ensaios, palco e tudo que fica entre uma música e a próxima.</p>
+      <Eyebrow v-reveal>— bastidores —</Eyebrow>
+      <h2 v-reveal="60" class="bp-gallery__title">Galeria</h2>
+      <p v-reveal="120" class="bp-gallery__sub">Ensaios, palco e tudo que fica entre uma música e a próxima.</p>
     </div>
 
     <div class="bp-gallery__grid">
       <figure
         v-for="(item, i) in items"
         :key="i"
+        v-reveal="i * 90"
         :class="['bp-tile', `bp-tile--${item.layout || 'square'}`, item.src ? '' : 'bp-tile--empty']"
       >
         <template v-if="item.src && item.type === 'image'">
