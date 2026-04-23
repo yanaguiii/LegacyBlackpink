@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Legacy Blackpink Cover — Core Tokens
+   BLACKPINK-inspired: pink-on-black luxe, high-contrast editorial
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ------------------------------------------------------------------------
+     COLORS — Primary palette
+     The two namesake colors. Everything else is built around them.
+     ------------------------------------------------------------------------ */
+  --legacy-black:       #000000;   /* true black — backgrounds, stage */
+  --legacy-pink:        #F4A6BD;   /* signature pink — the crown pink */
+  --legacy-pink-soft:   #F8C5D4;   /* lighter, for fills/hovers */
+  --legacy-pink-deep:   #E87A9B;   /* deeper rose — press, accents */
+  --legacy-pink-hot:    #FF4F87;   /* hot pink — strong CTAs, alerts */
+  --legacy-rose-dust:   #D9869A;   /* muted dusty rose — secondary */
+
+  /* ------------------------------------------------------------------------
+     COLORS — Neutrals (warm-shifted, never pure cool gray)
+     ------------------------------------------------------------------------ */
+  --legacy-ink:         #0A0608;   /* near-black with pink undertone */
+  --legacy-onyx:        #141013;   /* one step up — cards on black */
+  --legacy-shadow:      #1F1A1D;   /* elevated surfaces */
+  --legacy-stone:       #2A2328;   /* borders on dark */
+  --legacy-mauve:       #4A3F45;   /* muted text on dark */
+  --legacy-ash:         #7A6E74;   /* tertiary text */
+  --legacy-mist:        #BFB5BA;   /* low-emphasis on dark */
+  --legacy-pearl:       #F2ECEF;   /* off-white surfaces */
+  --legacy-cream:       #FBF7F9;   /* cleanest white */
+  --legacy-white:       #FFFFFF;
+
+  /* ------------------------------------------------------------------------
+     COLORS — Semantic (foreground/background/border on dark stage)
+     ------------------------------------------------------------------------ */
+  --bg:               var(--legacy-black);
+  --bg-elevated:      var(--legacy-onyx);
+  --bg-raised:        var(--legacy-shadow);
+  --bg-inverted:      var(--legacy-cream);
+
+  --fg1:              var(--legacy-pearl);     /* primary text on dark */
+  --fg2:              var(--legacy-mist);      /* secondary */
+  --fg3:              var(--legacy-ash);       /* tertiary / meta */
+  --fg-muted:         var(--legacy-mauve);
+  --fg-accent:        var(--legacy-pink);
+  --fg-accent-strong: var(--legacy-pink-hot);
+  --fg-on-pink:       var(--legacy-black);
+
+  --border:           var(--legacy-stone);
+  --border-strong:    var(--legacy-mauve);
+  --border-accent:    var(--legacy-pink);
+  --hairline:         rgba(244, 166, 189, 0.18);   /* the signature thin pink rule */
+  --hairline-strong:  rgba(244, 166, 189, 0.45);
+
+  /* State */
+  --success:          #7AD1A8;
+  --warning:          #E8C06A;
+  --danger:           #FF4F6E;
+  --info:             var(--legacy-pink);
+
+  /* ------------------------------------------------------------------------
+     TYPOGRAPHY — Font stacks
+     ------------------------------------------------------------------------ */
+  --font-display:     'Playfair Display', 'Cormorant Garamond', 'Didot', 'Bodoni 72', Georgia, serif;
+  --font-serif:       'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans:        'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:        'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type scale — editorial, not web-standard. Big jumps, dramatic. */
+  --text-3xs:         10px;
+  --text-2xs:         11px;
+  --text-xs:          12px;
+  --text-sm:          14px;
+  --text-base:        16px;
+  --text-md:          18px;
+  --text-lg:          22px;
+  --text-xl:          28px;
+  --text-2xl:         36px;
+  --text-3xl:         48px;
+  --text-4xl:         64px;
+  --text-5xl:         88px;
+  --text-6xl:         120px;
+  --text-7xl:         160px;
+
+  /* Weights */
+  --fw-light:         300;
+  --fw-regular:       400;
+  --fw-medium:        500;
+  --fw-semibold:      600;
+  --fw-bold:          700;
+  --fw-black:         900;
+
+  /* Line heights */
+  --lh-tight:         1.05;
+  --lh-snug:          1.2;
+  --lh-normal:        1.45;
+  --lh-loose:         1.65;
+
+  /* Letter spacing — the "LEGACY / COVER" small-caps are tracked out wide */
+  --tracking-tightest: -0.04em;
+  --tracking-tight:    -0.02em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.08em;
+  --tracking-wider:    0.18em;     /* the signature "— LEGACY —" spacing */
+  --tracking-widest:   0.32em;
+
+  /* ------------------------------------------------------------------------
+     SPACING — 4px grid, with named steps
+     ------------------------------------------------------------------------ */
+  --sp-0:             0;
+  --sp-1:             4px;
+  --sp-2:             8px;
+  --sp-3:             12px;
+  --sp-4:             16px;
+  --sp-5:             20px;
+  --sp-6:             24px;
+  --sp-8:             32px;
+  --sp-10:            40px;
+  --sp-12:            48px;
+  --sp-16:            64px;
+  --sp-20:            80px;
+  --sp-24:            96px;
+  --sp-32:            128px;
+
+  /* ------------------------------------------------------------------------
+     RADII — mostly sharp. Rounding reserved for pills + gems.
+     ------------------------------------------------------------------------ */
+  --radius-none:      0;
+  --radius-xs:        2px;
+  --radius-sm:        4px;
+  --radius-md:        8px;
+  --radius-lg:        12px;
+  --radius-xl:        20px;
+  --radius-pill:      999px;
+
+  /* ------------------------------------------------------------------------
+     SHADOWS — pink-tinted glows + deep black drops
+     ------------------------------------------------------------------------ */
+  --shadow-sm:        0 1px 2px rgba(0,0,0,0.6);
+  --shadow-md:        0 8px 24px rgba(0,0,0,0.55);
+  --shadow-lg:        0 24px 64px rgba(0,0,0,0.7);
+  --glow-pink-sm:     0 0 12px rgba(244, 166, 189, 0.35);
+  --glow-pink-md:     0 0 28px rgba(244, 166, 189, 0.45), 0 0 60px rgba(244, 166, 189, 0.15);
+  --glow-pink-lg:     0 0 40px rgba(244, 166, 189, 0.55), 0 0 120px rgba(244, 166, 189, 0.25);
+  --glow-hot:         0 0 24px rgba(255, 79, 135, 0.55);
+
+  /* Inner ring for cards sitting on black */
+  --inner-ring:       inset 0 0 0 1px rgba(244, 166, 189, 0.12);
+  --inner-ring-strong: inset 0 0 0 1px rgba(244, 166, 189, 0.35);
+
+  /* Motion */
+  --ease-out-soft:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out:      cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-stage:       cubic-bezier(0.65, 0, 0.35, 1);  /* slow curtain-raise feel */
+  --dur-fast:         150ms;
+  --dur-base:         260ms;
+  --dur-slow:         520ms;
+  --dur-stage:        900ms;
+}
+
+/* ==========================================================================
+   SEMANTIC TYPE — the primitives components should use
+   ========================================================================== */
+
+.legacy-display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-black);
+  font-size: var(--text-6xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+}
+
+.legacy-h1 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--text-4xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+}
+
+.legacy-h2 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-3xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+}
+
+.legacy-h3 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-2xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+
+.legacy-h4 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+
+/* The signature BLACKPINK-style small-caps label with tracking */
+.legacy-eyebrow {
+  font-family: var(--font-display);
+  font-weight: var(--fw-medium);
+  font-size: var(--text-sm);
+  line-height: 1;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--fg-accent);
+}
+
+/* With the horizontal rule flourishes — "— LEGACY —" style */
+.legacy-eyebrow-ruled {
+  font-family: var(--font-display);
+  font-weight: var(--fw-medium);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--fg-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.legacy-eyebrow-ruled::before,
+.legacy-eyebrow-ruled::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.legacy-body {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--text-base);
+  line-height: var(--lh-loose);
+  color: var(--fg1);
+}
+
+.legacy-body-serif {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--text-md);
+  line-height: var(--lh-loose);
+  color: var(--fg1);
+}
+
+.legacy-small {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: var(--lh-normal);
+  color: var(--fg2);
+}
+
+.legacy-caption {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg3);
+}
+
+.legacy-mono {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--fg2);
+}
+
+/* ==========================================================================
+   STAGE — the default "on black" page background
+   ========================================================================== */
+
+.legacy-stage {
+  background: var(--bg);
+  color: var(--fg1);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
