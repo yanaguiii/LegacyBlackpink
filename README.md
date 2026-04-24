@@ -2,7 +2,7 @@
 
 Site oficial do cover **Legacy Blackpink Cover** — uma homenagem à BLACKPINK, construída como SPA em Vue 3 seguindo o design system *pink-on-black editorial* exportado pelo Claude Design.
 
-> *"Um cover não é cópia. É o ato de dizer — esta canção foi escrita para outra pessoa, e esta noite, ela é para você."*
+> *"Levamos ao palco o show da BLACKPINK com a mesma energia, esforço e produção do original — para que cada noite tenha o sentimento de um show de verdade."*
 
 ---
 
@@ -12,14 +12,14 @@ Single-page com as seguintes seções, navegáveis por âncoras no topo:
 
 | Seção | Âncora | Descrição |
 |---|---|---|
-| Hero | `#top` | Coroa animada, wordmark, CTAs para reservar lugar / ver repertório |
+| Hero | `#top` | Coroa animada, wordmark e CTAs para contato / repertório |
 | Repertório | `#setlist` | Lista das músicas da BLACKPINK que o cover toca (Pink Venom, Kill This Love, How You Like That, DDU-DU DDU-DU, Shut Down, Boombayah, Whistle, Playing With Fire, Lovesick Girls, As If It's Your Last) com pills de status |
-| Capítulos | `#chapters` | Três "gems" narrativas: A Abertura, A Coroação, O Encore |
-| Manifesto | `#program` | Citação editorial sobre o que é um cover |
-| Lista de espera | `#shop` | Formulário de inscrição com nome + email |
-| Footer | — | Marca, links institucionais, copyright |
-
-Toda interação de "reservar lugar" abre o `SeatModal` (com trap de ESC, trava de scroll do body e teleport para o `<body>`).
+| Galeria | `#gallery` | Mosaico de fotos e vídeos de bastidores e palco |
+| Vídeos | `#videos` | Seleção de covers em palco e estúdio |
+| Capítulos | `#chapters` | Três cards de proposta: Produção, Repertório e Estrada |
+| Manifesto | `#program` | Citação editorial sobre a proposta do show |
+| Contato | `#contato` | Cards de WhatsApp, Instagram e email |
+| Footer | — | Marca, links de contato, copyright |
 
 ---
 

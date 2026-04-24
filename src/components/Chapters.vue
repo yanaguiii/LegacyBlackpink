@@ -3,28 +3,26 @@
     <div class="bp-gems__grid">
       <article v-reveal class="bp-gem">
         <Eyebrow>capítulo i</Eyebrow>
-        <h3 class="bp-gem__t">A Abertura</h3>
+        <h3 class="bp-gem__t">Produção</h3>
         <p class="bp-gem__b">
-          Um único refletor. Uma coroa que não é nossa, mas que carregamos com respeito. O palco está vazio — e esse é o ponto.
+          Estrutura de palco completa: som, luz, figurino e coreografia alinhados ao show original — adaptáveis a eventos, casas de show e festivais.
         </p>
-        <Button variant="ghost" size="sm">Ler →</Button>
       </article>
       <article v-reveal="120" class="bp-gem bp-gem--featured">
         <img src="/assets/crown-flat.png" class="bp-gem__crown" alt="" />
         <Eyebrow>capítulo ii</Eyebrow>
-        <h3 class="bp-gem__t">A Coroação</h3>
+        <h3 class="bp-gem__t">Repertório</h3>
         <p class="bp-gem__b">
-          Um cover não é cópia. É a forma de dizer: essa canção foi escrita para outra pessoa, e esta noite, ela é para você.
+          Os maiores hits da BLACKPINK entregues com a mesma energia e presença do show original. Setlists adaptáveis ao tempo e ao formato do evento.
         </p>
         <Button variant="primary" size="sm" @click="scrollToContato">Fale com a banda →</Button>
       </article>
       <article v-reveal="240" class="bp-gem">
         <Eyebrow>capítulo iii</Eyebrow>
-        <h3 class="bp-gem__t">O Encore</h3>
+        <h3 class="bp-gem__t">Estrada</h3>
         <p class="bp-gem__b">
-          Não vamos anunciá-lo. Você vai saber porque a cortina vai subir duas vezes.
+          Cinco anos de palco e um repertório que se adapta à sua vontade — do clube ao festival, com entrega consistente a cada apresentação.
         </p>
-        <Button variant="ghost" size="sm">Ler →</Button>
       </article>
     </div>
   </section>
