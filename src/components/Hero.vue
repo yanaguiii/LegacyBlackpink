@@ -27,3 +27,5 @@ import { scrollToAnchor } from '../composables/lenis.js'
 const scrollToSetlist = () => scrollToAnchor('#setlist')
 const scrollToContato = () => scrollToAnchor('#contato')
 </script>
+
+<style src="../styles/components/hero.css"></style>

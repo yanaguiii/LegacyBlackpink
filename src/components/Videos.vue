@@ -49,3 +49,5 @@ const videos = [
   { youtubeId: '', title: 'How You Like That', song: 'ao vivo · são paulo' }
 ]
 </script>
+
+<style src="../styles/components/videos.css"></style>

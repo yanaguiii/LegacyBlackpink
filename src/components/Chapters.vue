@@ -35,3 +35,5 @@ import { scrollToAnchor } from '../composables/lenis.js'
 
 const scrollToContato = () => scrollToAnchor('#contato')
 </script>
+
+<style src="../styles/components/chapters.css"></style>

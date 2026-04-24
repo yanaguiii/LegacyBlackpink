@@ -34,3 +34,5 @@ const setlist = [
   { song: 'As If It\'s Your Last', album: 'Single · 2017',    status: 'curtain call', variant: 'ghost' }
 ]
 </script>
+
+<style src="../styles/components/setlist.css"></style>

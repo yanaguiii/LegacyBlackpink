@@ -38,3 +38,5 @@ function go(sel) {
   history.replaceState(null, '', sel)
 }
 </script>
+
+<style src="../styles/components/nav.css"></style>

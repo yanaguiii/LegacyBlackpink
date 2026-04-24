@@ -12,3 +12,5 @@
 <script setup>
 import Eyebrow from './Eyebrow.vue'
 </script>
+
+<style src="../styles/components/manifesto.css"></style>

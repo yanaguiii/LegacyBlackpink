@@ -18,3 +18,5 @@
     </div>
   </footer>
 </template>
+
+<style src="../styles/components/footer.css"></style>

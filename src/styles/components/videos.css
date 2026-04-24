@@ -1,0 +1,78 @@
+.bp-videos { padding: 96px 48px; max-width: 1240px; margin: 0 auto; }
+.bp-videos__head { display: flex; flex-direction: column; gap: 16px; margin-bottom: 48px; }
+.bp-videos__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--legacy-pearl);
+}
+.bp-videos__sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--fg2);
+  margin: 0;
+  max-width: 52ch;
+}
+.bp-videos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.bp-video { margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.bp-video__frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--legacy-onyx);
+  box-shadow: inset 0 0 0 1px rgba(244, 166, 189, 0.12);
+  overflow: hidden;
+}
+.bp-video__frame iframe,
+.bp-video__frame video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.bp-video__placeholder {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px;
+  background: linear-gradient(180deg, #141013 0%, #0a0608 100%);
+}
+.bp-video__mark { width: 48px; height: 48px; opacity: 0.45; filter: drop-shadow(0 0 22px rgba(244,166,189,0.22)); }
+.bp-video__slot {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--fg3);
+}
+.bp-video__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 2px;
+}
+.bp-video__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--legacy-pearl);
+  letter-spacing: -0.01em;
+}
+.bp-video__song {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--legacy-pink);
+}
+
+@media (max-width: 820px) {
+  .bp-videos { padding-left: 20px; padding-right: 20px; }
+  .bp-videos__title { font-size: 42px; }
+  .bp-videos__grid { grid-template-columns: 1fr; }
+}

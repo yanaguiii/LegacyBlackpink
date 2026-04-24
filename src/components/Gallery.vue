@@ -46,3 +46,5 @@ const items = [
   { type: 'gif',   src: '', alt: 'Coreografia gif',  layout: 'square', caption: 'Shut Down · outro' }
 ]
 </script>
+
+<style src="../styles/components/gallery.css"></style>
