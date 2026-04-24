@@ -14,8 +14,6 @@
       <Button variant="ghost" @click="scrollToSetlist">Ver repertório</Button>
     </div>
     <div class="bp-hero__meta">
-      <span>◆ estreia · 18 de maio</span>
-      <span>·</span>
       <span>são paulo · rio · brasília</span>
     </div>
   </section>

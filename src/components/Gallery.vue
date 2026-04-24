@@ -37,12 +37,12 @@ import Eyebrow from './Eyebrow.vue'
 // type: 'image' | 'video' | 'gif'   |   layout: 'square' | 'tall' | 'wide'
 // Deixe `src: ''` para manter o placeholder on-brand.
 const items = [
-  { type: 'image', src: '', alt: 'Abertura do show', layout: 'tall',   caption: 'abertura · são paulo' },
-  { type: 'image', src: '', alt: 'Backstage',        layout: 'square' },
+  { type: 'image', src: '', alt: 'Abertura do show', layout: 'tall',   caption: 'intro · fábrica de cultura' },
+  { type: 'image', src: '', alt: 'Backstage',        layout: 'square', caption: 'GO · korea fest' },
   { type: 'video', src: '', alt: 'Coreografia',      layout: 'square', caption: 'how you like that · ensaio' },
-  { type: 'image', src: '', alt: 'Encore',           layout: 'wide',   caption: 'encore · rio de janeiro' },
-  { type: 'image', src: '', alt: 'Detalhe',          layout: 'square' },
-  { type: 'gif',   src: '', alt: 'Coreografia gif',  layout: 'square' },
-  { type: 'gif',   src: '', alt: 'Coreografia gif',  layout: 'square' }
+  { type: 'image', src: '', alt: 'Encore',           layout: 'wide',   caption: 'JUMP · anime friends' },
+  { type: 'image', src: '', alt: 'Detalhe',          layout: 'square', caption: 'Kill This Love · korea fest' },
+  { type: 'gif',   src: '', alt: 'Coreografia gif',  layout: 'square', caption: 'Pink Venom · ensaio' },
+  { type: 'gif',   src: '', alt: 'Coreografia gif',  layout: 'square', caption: 'Shut Down · outro' }
 ]
 </script>
