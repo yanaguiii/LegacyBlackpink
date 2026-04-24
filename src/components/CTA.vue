@@ -1,6 +1,6 @@
 <template>
   <section class="bp-contact" id="contato">
-    <Eyebrow v-reveal>— fale com a banda —</Eyebrow>
+    <Eyebrow v-reveal>— Entre em contato —</Eyebrow>
     <h2 v-reveal="80" class="bp-contact__t">Shows, parcerias, covers por encomenda.</h2>
     <p v-reveal="180" class="bp-contact__b">Chame pelo canal que preferir. Respondemos em até 24h.</p>
 

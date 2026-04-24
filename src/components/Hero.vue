@@ -10,7 +10,7 @@
       Banda cover oficial. Cinco anos de estrada para shows, eventos e festivais.
     </p>
     <div class="bp-hero__actions">
-      <Button variant="primary" @click="scrollToContato">Fale com a banda →</Button>
+      <Button variant="primary" @click="scrollToContato">Entre em contato →</Button>
       <Button variant="ghost" @click="scrollToSetlist">Ver repertório</Button>
     </div>
     <div class="bp-hero__meta">

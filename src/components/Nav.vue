@@ -17,7 +17,7 @@
         @click.prevent="go(l.href)"
       >{{ l.label }}</a>
     </div>
-    <Button variant="primary" size="sm" @click="go('#contato')">Fale com a banda</Button>
+    <Button variant="primary" size="sm" @click="go('#contato')">Entre em contato</Button>
   </nav>
 </template>
 
