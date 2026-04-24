@@ -11,7 +11,9 @@
     <div class="bp-footer__bot">
       <span>© Legacy Blackpink Cover 2026</span>
       <div class="bp-footer__links">
-        <a>press</a><a>terms</a><a>privacy</a><a>contato</a>
+        <a href="https://wa.me/5511957876548" target="_blank" rel="noopener">whatsapp</a>
+        <a href="https://www.instagram.com/legacyblackpink.cover/" target="_blank" rel="noopener">instagram</a>
+        <a href="#contato">contato</a>
       </div>
     </div>
   </footer>

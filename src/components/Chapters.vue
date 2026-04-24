@@ -16,7 +16,7 @@
         <p class="bp-gem__b">
           Um cover não é cópia. É a forma de dizer: essa canção foi escrita para outra pessoa, e esta noite, ela é para você.
         </p>
-        <Button variant="primary" size="sm" @click="$emit('contact')">Entre em contato →</Button>
+        <Button variant="primary" size="sm" @click="scrollToContato">Fale com a banda →</Button>
       </article>
       <article v-reveal="240" class="bp-gem">
         <Eyebrow>capítulo iii</Eyebrow>
@@ -33,6 +33,7 @@
 <script setup>
 import Eyebrow from './Eyebrow.vue'
 import Button from './Button.vue'
+import { scrollToAnchor } from '../composables/lenis.js'
 
-defineEmits(['contact'])
+const scrollToContato = () => scrollToAnchor('#contato')
 </script>

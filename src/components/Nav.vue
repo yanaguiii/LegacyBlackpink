@@ -17,7 +17,7 @@
         @click.prevent="go(l.href)"
       >{{ l.label }}</a>
     </div>
-    <Button variant="primary" size="sm" @click="$emit('contact')">Entre em contato</Button>
+    <Button variant="primary" size="sm" @click="go('#contato')">Fale com a banda</Button>
   </nav>
 </template>
 
@@ -25,14 +25,12 @@
 import Button from './Button.vue'
 import { scrollToAnchor } from '../composables/lenis.js'
 
-defineEmits(['contact'])
-
 const links = [
   { href: '#setlist',  label: '— repertório', active: true },
   { href: '#gallery',  label: 'galeria' },
   { href: '#videos',   label: 'vídeos' },
   { href: '#chapters', label: 'capítulos' },
-  { href: '#shop',     label: 'contato' }
+  { href: '#contato',  label: 'contato' }
 ]
 
 function go(sel) {

@@ -42,6 +42,7 @@ const items = [
   { type: 'video', src: '', alt: 'Coreografia',      layout: 'square', caption: 'how you like that · ensaio' },
   { type: 'image', src: '', alt: 'Encore',           layout: 'wide',   caption: 'encore · rio de janeiro' },
   { type: 'image', src: '', alt: 'Detalhe',          layout: 'square' },
+  { type: 'gif',   src: '', alt: 'Coreografia gif',  layout: 'square' },
   { type: 'gif',   src: '', alt: 'Coreografia gif',  layout: 'square' }
 ]
 </script>

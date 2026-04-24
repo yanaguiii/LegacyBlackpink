@@ -10,7 +10,7 @@
       Um cover oficial da BLACKPINK. Cinco anos de palco, uma coroa emprestada, nenhum pedido de licença.
     </p>
     <div class="bp-hero__actions">
-      <Button variant="primary" @click="$emit('contact')">Entre em contato →</Button>
+      <Button variant="primary" @click="scrollToContato">Fale com a banda →</Button>
       <Button variant="ghost" @click="scrollToSetlist">Ver repertório</Button>
     </div>
     <div class="bp-hero__meta">
@@ -26,7 +26,6 @@ import Eyebrow from './Eyebrow.vue'
 import Button from './Button.vue'
 import { scrollToAnchor } from '../composables/lenis.js'
 
-defineEmits(['contact'])
-
 const scrollToSetlist = () => scrollToAnchor('#setlist')
+const scrollToContato = () => scrollToAnchor('#contato')
 </script>

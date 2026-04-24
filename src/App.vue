@@ -1,20 +1,19 @@
 <template>
   <div class="bp-page">
-    <Nav @contact="openContact" />
-    <Hero @contact="openContact" />
+    <Nav />
+    <Hero />
     <Setlist />
     <Gallery />
     <Videos />
-    <Chapters @contact="openContact" />
+    <Chapters />
     <Manifesto />
     <CTA />
     <Footer />
-    <ContactModal :open="modalOpen" @close="modalOpen = false" />
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref, watch } from 'vue'
+import { onMounted } from 'vue'
 import Nav from './components/Nav.vue'
 import Hero from './components/Hero.vue'
 import Setlist from './components/Setlist.vue'
@@ -24,19 +23,9 @@ import Chapters from './components/Chapters.vue'
 import Manifesto from './components/Manifesto.vue'
 import CTA from './components/CTA.vue'
 import Footer from './components/Footer.vue'
-import ContactModal from './components/ContactModal.vue'
-import { initLenis, getLenis } from './composables/lenis.js'
-
-const modalOpen = ref(false)
-const openContact = () => { modalOpen.value = true }
+import { initLenis } from './composables/lenis.js'
 
 onMounted(() => {
   initLenis()
-})
-
-watch(modalOpen, (v) => {
-  const lenis = getLenis()
-  if (!lenis) return
-  v ? lenis.stop() : lenis.start()
 })
 </script>
