@@ -30,9 +30,9 @@ const setlist = [
   { song: 'Typa Girl',         album: 'Born Pink · 2022',      variant: 'ghost', url: 'https://open.spotify.com/intl-pt/track/0L8LOav65XwLjCLS11gNPD?si=6d3ca89a508c4a22' },
   { song: 'Lovesick Girls',    album: 'The Album · 2020',      variant: 'onyx',  url: 'https://open.spotify.com/intl-pt/track/4Ws314Ylb27BVsvlZOy30C?si=daeb83c9f699415e' },
   { song: 'Forever Young',     album: 'Square Up · 2018',      variant: 'ghost', url: 'https://open.spotify.com/intl-pt/track/6veFyjNycn6EaNCKhkPXUY?si=8925b37fffdb410d' },
-  { song: 'GO',                album: 'Single · 2025',         variant: 'pink',  url: 'https://open.spotify.com/intl-pt/track/3FZPp9lBUvhsxFxKJi3VkB?si=4819346fb30f4a0c' },
+  { song: 'GO',                album: 'DEADLINE · 2026',       variant: 'pink',  url: 'https://open.spotify.com/intl-pt/track/3FZPp9lBUvhsxFxKJi3VkB?si=4819346fb30f4a0c' },
   { song: 'BOOMBAYAH',         album: 'Square One · 2016',     variant: 'onyx',  url: 'https://open.spotify.com/intl-pt/track/13MF2TYuyfITClL1R2ei6e?si=a833d3e0f3a04aa1' },
-  { song: 'Jump',              album: 'Single · 2025',         variant: 'hot',   url: 'https://open.spotify.com/intl-pt/track/5H1sKFMzDeMtXwND3V6hRY?si=413104e66b0d400f' },
+  { song: 'Jump',              album: 'DEADLINE · 2026',       variant: 'hot',   url: 'https://open.spotify.com/intl-pt/track/5H1sKFMzDeMtXwND3V6hRY?si=413104e66b0d400f' },
   { song: 'Shut Down',         album: 'Born Pink · 2022',      variant: 'hot',   url: 'https://open.spotify.com/intl-pt/track/7gRFDGEzF9UkBV233yv2dc?si=2844e1242192487e' },
   { song: 'Pink Venom',        album: 'Born Pink · 2022',      variant: 'hot',   url: 'https://open.spotify.com/intl-pt/track/5zwwW9Oq7ubSxoCGyW1nbY?si=7ff56fae075b4ef1' }
 ]
