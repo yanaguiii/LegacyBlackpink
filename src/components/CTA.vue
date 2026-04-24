@@ -7,7 +7,7 @@
     <div v-reveal="280" class="bp-contact__grid">
       <a
         class="bp-contact__card"
-        href="https://wa.me/5511957876548"
+        href="https://wa.me/5511957876548?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20show%20do%20BLACKPINK."
         target="_blank"
         rel="noopener"
       >
