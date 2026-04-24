@@ -29,12 +29,15 @@
         <span class="bp-contact__cta">Seguir no Instagram →</span>
       </a>
 
-      <div class="bp-contact__card bp-contact__card--muted" aria-disabled="true">
+      <a
+        class="bp-contact__card"
+        href="mailto:legacyblackpinkcover@gmail.com"
+      >
         <span class="bp-contact__mark">◆</span>
         <span class="bp-contact__label">— email</span>
-        <span class="bp-contact__value">em breve</span>
-        <span class="bp-contact__cta">A definir</span>
-      </div>
+        <span class="bp-contact__value">legacyblackpinkcover@gmail.com</span>
+        <span class="bp-contact__cta">Enviar email →</span>
+      </a>
     </div>
   </section>
 </template>
