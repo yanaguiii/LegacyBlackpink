@@ -33,6 +33,8 @@
   cursor: pointer;
   transition: all 260ms var(--ease-stage);
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
 }
 .bp-btn--md { font-size: 13px; padding: 14px 24px; }
 .bp-btn--sm { font-size: 11px; padding: 9px 16px; letter-spacing: 0.2em; }
