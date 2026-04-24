@@ -7,14 +7,14 @@
       O show do BLACKPINK <em>ao vivo</em>, no Brasil.
     </h1>
     <p class="bp-hero__sub">
-      Banda cover oficial. Cinco anos de estrada para shows, eventos e festivais.
+      Grupo cover oficial. Cinco anos de estrada para shows, eventos e festivais.
     </p>
     <div class="bp-hero__actions">
       <Button variant="primary" @click="scrollToContato">Entre em contato →</Button>
       <Button variant="ghost" @click="scrollToSetlist">Ver repertório</Button>
     </div>
     <div class="bp-hero__meta">
-      <span>são paulo · rio · brasília</span>
+      <span>são paulo · rio · belo horizonte</span>
     </div>
   </section>
 </template>
