@@ -1,6 +1,6 @@
 <template>
   <section class="bp-manifesto" id="program">
-    <Eyebrow v-reveal>program note</Eyebrow>
+    <Eyebrow v-reveal>NOTA DO GRUPO</Eyebrow>
     <blockquote v-reveal="120" class="bp-manifesto__quote">
       <span class="bp-manifesto__open">&ldquo;</span>
       Levamos ao palco o show do BLACKPINK com a mesma energia, esforço e espírito do original — <em>para que cada performance tenha o sentimento de um show de verdade.</em>&rdquo;

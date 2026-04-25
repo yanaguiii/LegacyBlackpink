@@ -7,7 +7,7 @@
       A experiência do show do <em>BLACKPINK</em>, no Brasil.
     </h1>
     <p class="bp-hero__sub">
-      Grupo cover oficial. Cinco anos de estrada para shows, eventos e festivais.
+      Grupo cover oficial. Cinco anos de estrada para shows, eventos e festivais. Tudo feito de <b>fã</b> para <b>fã</b>.
     </p>
     <div class="bp-hero__actions">
       <Button variant="primary" @click="scrollToContato">Entre em contato →</Button>

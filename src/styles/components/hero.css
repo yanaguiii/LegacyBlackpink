@@ -12,12 +12,12 @@
 }
 .bp-hero__aura {
   position: absolute;
-  top: 12%; left: 50%;
+  top: 6%; left: 50%;
   transform: translateX(-50%);
-  width: 720px; height: 560px;
-  background: radial-gradient(ellipse at center, rgba(244,166,189,0.22), transparent 65%);
+  width: 1080px; height: 800px;
+  background: radial-gradient(ellipse at center, rgba(244,166,189,0.28), transparent 68%);
   pointer-events: none;
-  filter: blur(6px);
+  filter: blur(8px);
 }
 .bp-hero__crown {
   width: 220px;

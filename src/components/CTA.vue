@@ -1,8 +1,8 @@
 <template>
   <section class="bp-contact" id="contato">
     <Eyebrow v-reveal>Entre em contato</Eyebrow>
-    <h2 v-reveal="80" class="bp-contact__t">Shows, parcerias, covers por encomenda.</h2>
-    <p v-reveal="180" class="bp-contact__b">Chame pelo canal que preferir. Respondemos em até 24h.</p>
+    <h2 v-reveal="80" class="bp-contact__t">Shows completos, parcerias e performances personalizadas.</h2>
+    <p v-reveal="180" class="bp-contact__b">Converse com a gente pelo canal que preferir. Respondemos em até 24h.</p>
 
     <div v-reveal="280" class="bp-contact__grid">
       <a
