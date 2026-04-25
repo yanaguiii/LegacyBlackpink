@@ -13,7 +13,7 @@
         <Eyebrow>capítulo ii</Eyebrow>
         <h3 class="bp-gem__t">Repertório</h3>
         <p class="bp-gem__b">
-          Os maiores hits da BLACKPINK entregues com a mesma energia e presença do show original. Setlists adaptáveis ao tempo e ao formato do evento.
+          Os maiores hits do BLACKPINK entregues com a mesma energia e presença do show original. Setlists adaptáveis ao tempo e ao formato do evento.
         </p>
         <Button variant="primary" size="sm" @click="scrollToContato">Entre em contato →</Button>
       </article>

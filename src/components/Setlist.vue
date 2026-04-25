@@ -1,7 +1,7 @@
 <template>
   <section class="bp-tour" id="setlist">
     <div class="bp-tour__head">
-      <Eyebrow v-reveal>— the setlist —</Eyebrow>
+      <Eyebrow v-reveal>the setlist</Eyebrow>
       <h2 v-reveal="60" class="bp-tour__title">Repertório · 2026</h2>
     </div>
     <ol class="bp-tour__list">

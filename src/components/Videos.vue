@@ -1,7 +1,7 @@
 <template>
   <section class="bp-videos" id="videos">
     <div class="bp-videos__head">
-      <Eyebrow v-reveal>— performances —</Eyebrow>
+      <Eyebrow v-reveal>performances</Eyebrow>
       <h2 v-reveal="60" class="bp-videos__title">Vídeos</h2>
       <p v-reveal="120" class="bp-videos__sub">Covers no palco e em estúdio. Volume no talo.</p>
     </div>

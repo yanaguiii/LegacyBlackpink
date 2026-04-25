@@ -2,9 +2,9 @@
   <section class="bp-hero" id="top">
     <div class="bp-hero__aura" />
     <img src="/assets/crown-gem.png" class="bp-hero__crown" alt="" />
-    <Eyebrow class="bp-hero__eyebrow">— legacy blackpink cover —</Eyebrow>
+    <Eyebrow class="bp-hero__eyebrow">legacy blackpink cover</Eyebrow>
     <h1 class="bp-hero__title">
-      O show do BLACKPINK <em>ao vivo</em>, no Brasil.
+      A experiência do show do <em>BLACKPINK</em>, no Brasil.
     </h1>
     <p class="bp-hero__sub">
       Grupo cover oficial. Cinco anos de estrada para shows, eventos e festivais.
@@ -14,7 +14,7 @@
       <Button variant="ghost" @click="scrollToSetlist">Ver repertório</Button>
     </div>
     <div class="bp-hero__meta">
-      <span>são paulo · rio · belo horizonte</span>
+      <span>são paulo · rio de janeiro · belo horizonte</span>
     </div>
   </section>
 </template>

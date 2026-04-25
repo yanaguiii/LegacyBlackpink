@@ -1,6 +1,6 @@
 <template>
   <section class="bp-contact" id="contato">
-    <Eyebrow v-reveal>— Entre em contato —</Eyebrow>
+    <Eyebrow v-reveal>Entre em contato</Eyebrow>
     <h2 v-reveal="80" class="bp-contact__t">Shows, parcerias, covers por encomenda.</h2>
     <p v-reveal="180" class="bp-contact__b">Chame pelo canal que preferir. Respondemos em até 24h.</p>
 
@@ -13,7 +13,7 @@
       >
         <span class="bp-contact__mark">◆</span>
         <span class="bp-contact__label">— whatsapp</span>
-        <span class="bp-contact__value">Chamar direto</span>
+        <span class="bp-contact__value">Fale direto conosco</span>
         <span class="bp-contact__cta">Abrir conversa →</span>
       </a>
 
@@ -31,7 +31,9 @@
 
       <a
         class="bp-contact__card"
-        href="mailto:legacyblackpinkcover@gmail.com"
+        href="mailto:legacyblackpinkcover@gmail.com?subject=Agendamento%20de%20show&body=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20show%20do%20BLACKPINK."
+        target="_blank"
+        rel="noopener"
       >
         <span class="bp-contact__mark">◆</span>
         <span class="bp-contact__label">— email</span>

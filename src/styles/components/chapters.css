@@ -1,4 +1,4 @@
-.bp-gems { padding: 80px 48px; max-width: 1240px; margin: 0 auto; }
+.bp-gems { padding: 40px 48px 80px; max-width: 1240px; margin: 0 auto; }
 .bp-gems__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .bp-gem {
   position: relative;

@@ -2,10 +2,10 @@
   <div class="bp-page">
     <Nav />
     <Hero />
+    <Chapters />
     <Setlist />
     <Gallery />
     <Videos />
-    <Chapters />
     <Manifesto />
     <CTA />
     <Footer />

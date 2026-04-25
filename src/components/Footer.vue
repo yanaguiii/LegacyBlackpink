@@ -3,10 +3,10 @@
     <div class="bp-footer__top">
       <div class="bp-footer__brand">
         <img src="/assets/crown-flat.png" alt="" />
-        <span>BLACKPINK</span>
+        <span>LEGACY</span>
       </div>
       <div class="bp-footer__rule" />
-      <span class="bp-footer__mark">— legacy · cover —</span>
+      <span class="bp-footer__mark">— BLACKPINK · cover —</span>
     </div>
     <div class="bp-footer__bot">
       <span>© Legacy Blackpink Cover 2026</span>
@@ -14,7 +14,6 @@
         <a href="https://wa.me/5521966997227?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20show%20do%20BLACKPINK." target="_blank" rel="noopener">whatsapp</a>
         <a href="https://www.instagram.com/legacyblackpink.cover/" target="_blank" rel="noopener">instagram</a>
         <a href="mailto:legacyblackpinkcover@gmail.com">email</a>
-        <a href="#contato">contato</a>
       </div>
     </div>
   </footer>

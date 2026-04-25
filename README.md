@@ -2,7 +2,7 @@
 
 Site oficial do cover **Legacy Blackpink Cover** — uma homenagem à BLACKPINK, construída como SPA em Vue 3 seguindo o design system *pink-on-black editorial* exportado pelo Claude Design.
 
-> *"Levamos ao palco o show da BLACKPINK com a mesma energia, esforço e produção do original — para que cada noite tenha o sentimento de um show de verdade."*
+> *"Levamos ao palco o show do BLACKPINK com a mesma energia, esforço e espírito do original — para que cada performance tenha o sentimento de um show de verdade."*
 
 ---
 
@@ -13,7 +13,7 @@ Single-page com as seguintes seções, navegáveis por âncoras no topo:
 | Seção | Âncora | Descrição |
 |---|---|---|
 | Hero | `#top` | Coroa animada, wordmark e CTAs para contato / repertório |
-| Repertório | `#setlist` | Lista das músicas da BLACKPINK que o cover toca (Pink Venom, Kill This Love, How You Like That, DDU-DU DDU-DU, Shut Down, Boombayah, Whistle, Playing With Fire, Lovesick Girls, As If It's Your Last) com pills de status |
+| Repertório | `#setlist` | Lista das músicas do BLACKPINK que o cover toca (Pink Venom, Kill This Love, How You Like That, DDU-DU DDU-DU, Shut Down, Boombayah, Whistle, Playing With Fire, Lovesick Girls, As If It's Your Last) com pills de status |
 | Galeria | `#gallery` | Mosaico de fotos e vídeos de bastidores e palco |
 | Vídeos | `#videos` | Seleção de covers em palco e estúdio |
 | Capítulos | `#chapters` | Três cards de proposta: Produção, Repertório e Estrada |
@@ -40,7 +40,7 @@ O sistema é derivado do handoff bundle em `design_extract/blackpink/` (ignorado
 
 - **Paleta**: 90% preto + pearl, 10% pink. `#000000` como fundo padrão, `#F4A6BD` (legacy-pink) como accent.
 - **Tipografia**: Playfair Display para display/headlines, Inter para UI, Cormorant Garamond para body editorial, JetBrains Mono para código.
-- **Eyebrows**: small-caps com tracking de `0.22em`, flanqueados por traços `—`.
+- **Eyebrows**: small-caps com tracking de `0.22em`, sem traços decorativos.
 - **Corners**: maioria sharp. Radius 20px apenas nos "gems" em destaque, pills a 999px.
 - **Elevação**: inner rings em pink 12–30% sobre onyx (`#141013`), sem outer shadows pra flutuar.
 - **Glow pink** reservado para a coroa e focus em CTAs primários.
@@ -80,7 +80,7 @@ Legacy/
         ├── Setlist.vue        # <ol> de 10 músicas com pills de status
         ├── Chapters.vue       # 3 gems (featured no meio)
         ├── Manifesto.vue      # blockquote editorial
-        ├── CTA.vue            # form de newsletter com v-model
+        ├── CTA.vue            # cards de contato: WhatsApp, Instagram e email (com mensagem pré-preenchida)
         ├── Footer.vue         # marca + rule + links
         └── SeatModal.vue      # teleport + ESC + trava de scroll
 ```

@@ -1,7 +1,7 @@
 <template>
   <section class="bp-gallery" id="gallery">
     <div class="bp-gallery__head">
-      <Eyebrow v-reveal>— bastidores —</Eyebrow>
+      <Eyebrow v-reveal>bastidores</Eyebrow>
       <h2 v-reveal="60" class="bp-gallery__title">Galeria</h2>
       <p v-reveal="120" class="bp-gallery__sub">Ensaios, palco e tudo que fica entre uma música e a próxima.</p>
     </div>
