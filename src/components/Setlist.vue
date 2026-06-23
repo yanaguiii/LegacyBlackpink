@@ -42,16 +42,24 @@ const VISIBLE_COUNT = 6
 const expanded = ref(false)
 
 const setlist = [
-  { song: 'Kill This Love',    album: 'KILL THIS LOVE · 2019', url: 'https://open.spotify.com/intl-pt/track/6hvczQ05jc1yGlp9zhb95V?si=0fa7649c4e204268' },
-  { song: 'How You Like That', album: 'THE ALBUM · 2020',      url: 'https://open.spotify.com/intl-pt/track/3p9HltmtqXCvCSKKOKMZ29?si=a826850c0c3246da' },
   { song: 'Pink Venom',        album: 'BORN PINK · 2022',      url: 'https://open.spotify.com/intl-pt/track/0skYUMpS0AcbpjcGsAbRGj?si=f613cd359e514884' },
-  { song: 'Lovesick Girls',    album: 'THE ALBUM · 2020',      url: 'https://open.spotify.com/intl-pt/track/4Ws314Ylb27BVsvlZOy30C?si=daeb83c9f699415e' },
-  { song: 'Forever Young',     album: 'SQUARE UP · 2018',      url: 'https://open.spotify.com/intl-pt/track/6veFyjNycn6EaNCKhkPXUY?si=8925b37fffdb410d' },
-  { song: 'GO',                album: 'DEADLINE · 2026',       url: 'https://open.spotify.com/intl-pt/track/3FZPp9lBUvhsxFxKJi3VkB?si=4819346fb30f4a0c' },
-  { song: 'BOOMBAYAH',         album: 'SQUARE ONE · 2016',     url: 'https://open.spotify.com/intl-pt/track/13MF2TYuyfITClL1R2ei6e?si=a833d3e0f3a04aa1' },
+  { song: 'Kill This Love',    album: 'KILL THIS LOVE · 2019', url: 'https://open.spotify.com/intl-pt/track/6hvczQ05jc1yGlp9zhb95V?si=0fa7649c4e204268' },
+  { song: 'Kick It',           album: 'KILL THIS LOVE · 2019', url: 'https://open.spotify.com/intl-pt/track/4rsoLz7ZY1Ldz8dpm4Lqtg' },
+  { song: 'How You Like That', album: 'THE ALBUM · 2020',      url: 'https://open.spotify.com/intl-pt/track/3p9HltmtqXCvCSKKOKMZ29?si=a826850c0c3246da' },
+  { song: 'Pretty Savage',     album: 'THE ALBUM · 2020',      url: 'https://open.spotify.com/intl-pt/track/1XnpzbOGptRwfJhZgLbmSr?si=de60af2444914fac' },
+  { song: 'like JENNIE',       album: 'RUBY · 2025',           url: 'https://open.spotify.com/intl-pt/track/6nWWuodRc3aJS7aLrflaqF' },
+  { song: 'FLOWER',            album: 'ME · 2023',             url: 'https://open.spotify.com/intl-pt/track/69CrOS7vEHIrhC2ILyEi0s' },
+  { song: 'Money',             album: 'LALISA · 2021',         url: 'https://open.spotify.com/intl-pt/track/7hU3IHwjX150XLoTVmjD0q' },
+  { song: 'On The Ground',     album: 'R · 2021',              url: 'https://open.spotify.com/intl-pt/track/2pn8dNVSpYnAtlKFC8Q0DJ' },
   { song: 'Jump',              album: 'DEADLINE · 2026',       url: 'https://open.spotify.com/intl-pt/track/5H1sKFMzDeMtXwND3V6hRY?si=413104e66b0d400f' },
+  { song: 'Whistle / SHH',     album: 'SQUARE ONE · 2016',     url: 'https://open.spotify.com/intl-pt/track/6NEoeBLQbOMw92qMeLfI40' },
+  { song: 'BOOMBAYAH',         album: 'SQUARE ONE · 2016',     url: 'https://open.spotify.com/intl-pt/track/13MF2TYuyfITClL1R2ei6e?si=a833d3e0f3a04aa1' },
+  { song: 'Lovesick Girls',    album: 'THE ALBUM · 2020',      url: 'https://open.spotify.com/intl-pt/track/4Ws314Ylb27BVsvlZOy30C?si=daeb83c9f699415e' },
+  { song: 'Playing With Fire', album: 'SQUARE TWO · 2016',     url: 'https://open.spotify.com/intl-pt/track/7qmvLmX9tyaTiBAVNI6YEn' },
   { song: 'Shut Down',         album: 'BORN PINK · 2022',      url: 'https://open.spotify.com/intl-pt/track/7gRFDGEzF9UkBV233yv2dc?si=2844e1242192487e' },
-  { song: 'Pretty Savage',     album: 'THE ALBUM · 2020',      url: 'https://open.spotify.com/intl-pt/track/1XnpzbOGptRwfJhZgLbmSr?si=de60af2444914fac' }
+  { song: 'STAY',              album: 'SQUARE TWO · 2016',     url: 'https://open.spotify.com/intl-pt/track/3tP6QKbXvtrxiDI7QwKyUf' },
+  { song: 'DDU-DU DDU-DU',     album: 'SQUARE UP · 2018',      url: 'https://open.spotify.com/intl-pt/track/4lQsB3ERTWSNaAN1IkuNRl' },
+  { song: 'Forever Young',     album: 'SQUARE UP · 2018',      url: 'https://open.spotify.com/intl-pt/track/6veFyjNycn6EaNCKhkPXUY?si=8925b37fffdb410d' }
 ]
 </script>
 
